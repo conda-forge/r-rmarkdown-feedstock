@@ -15,7 +15,6 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1
-  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,7 +50,7 @@ requirements:
 
 test:
   requires:
-    - xorg-libxt                             # [not win]
+    #- xorg-libxt                             # [not win]
     - xorg-libsm                             # [not win]
   commands:
     - $R -e "library('rmarkdown')"           # [not win]
