@@ -50,13 +50,14 @@ requirements:
 
 test:
   requires:
-    - xorg-libxt                             # [not win]
-    #- xorg-libsm                             # [not win]
+    - xorg-libxt                             # [linux]
   commands:
     - $R -e "library('rmarkdown')"           # [not win]
     - "\"%R%\" -e \"library('rmarkdown')\""  # [win]
-    - $R -e "capabilities()" || true         # [not win]
-    - $R -e "grSoftVersion()" || true        # [not win]
+    - $R -e "capabilities()"                 # [not win]
+    - "\"%R%\" -e \"capabilities()\""        # [win]
+    - $R -e "grSoftVersion()"                # [not win]
+    - "\"%R%\" -e \"grSoftVersion()\""       # [win] 
     - $R -e "x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)"  # [not win]
     - "\"%R%\" -e \"x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)\""  # [win]
 
