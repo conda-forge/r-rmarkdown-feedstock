@@ -26,6 +26,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-bslib >=0.2.5.1
     - r-evaluate >=0.13
     - r-htmltools >=0.3.5
     - r-jquerylib
@@ -37,6 +38,7 @@ requirements:
     - r-yaml >=2.1.19
   run:
     - r-base
+    - r-bslib >=0.2.5.1
     - r-evaluate >=0.13
     - r-htmltools >=0.3.5
     - r-jquerylib
