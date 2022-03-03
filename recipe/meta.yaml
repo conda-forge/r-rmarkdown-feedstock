@@ -1,4 +1,4 @@
-{% set version = '2.11' %}
+{% set version = "2.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rmarkdown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmarkdown/rmarkdown_{{ version }}.tar.gz
-  sha256: 9371255300e7ea4cd936978ad2ca3d205d8605e09f4913cb0d4725005a7a9775
+  sha256: c3aba9eda862483c7631485002b6b94e0076e4fdd2384a095ee30243b958e690
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -66,7 +66,7 @@ about:
   summary: Convert R Markdown documents into a variety of formats.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
