@@ -1,13 +1,15 @@
-About r-rmarkdown
-=================
-
-Home: https://github.com/rstudio/rmarkdown, https://pkgs.rstudio.com/rmarkdown/
-
-Package license: GPL-3.0-only
+About r-rmarkdown-feedstock
+===========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rmarkdown-feedstock/blob/main/LICENSE.txt)
 
+Home: https://pkgs.rstudio.com/rmarkdown/
+
+Package license: GPL-3.0-only
+
 Summary: Convert R Markdown documents into a variety of formats.
+
+Development: https://github.com/rstudio/rmarkdown
 
 Current build status
 ====================
