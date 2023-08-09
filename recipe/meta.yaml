@@ -56,6 +56,7 @@ test:
   requires:
     - r-testthat
     - r-shiny
+    - texlive-core                           # [not win]
     - xorg-libxt                             # [not win]
     - xorg-libsm                             # [not win]
   source_files:
@@ -67,7 +68,7 @@ test:
     - $R -e "grSoftVersion()" || true        # [not win]
     - $R -e "x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)"           # [not win]
     - "\"%R%\" -e \"x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)\""  # [win]
-    - $R -e "tinytex::install_tinytex();testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')"           # [not win]
+    - $R -e "testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')"           # [not win]
     - "\"%R%\" -e \"tinytex::install_tinytex();testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')\""  # [win]
 
 about:
