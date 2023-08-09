@@ -55,6 +55,7 @@ requirements:
 test:
   requires:
     - r-testthat
+    - r-shiny
     - xorg-libxt                             # [not win]
     - xorg-libsm                             # [not win]
   source_files:
