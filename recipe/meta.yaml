@@ -67,8 +67,8 @@ test:
     - $R -e "grSoftVersion()" || true        # [not win]
     - $R -e "x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)"           # [not win]
     - "\"%R%\" -e \"x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)\""  # [win]
-    - $R -e "testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')"           # [not win]
-    - "\"%R%\" -e \"testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')\""  # [win]
+    - $R -e "tinytex::install_tinytex();testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')"           # [not win]
+    - "\"%R%\" -e \"tinytex::install_tinytex();testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')\""  # [win]
 
 about:
   home: https://pkgs.rstudio.com/rmarkdown/
