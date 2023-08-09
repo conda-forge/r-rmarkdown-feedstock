@@ -54,15 +54,20 @@ requirements:
 
 test:
   requires:
+    - r-testthat
     - xorg-libxt                             # [not win]
     - xorg-libsm                             # [not win]
+  source_files:
+    - tests/
   commands:
     - $R -e "library('rmarkdown')"           # [not win]
     - "\"%R%\" -e \"library('rmarkdown')\""  # [win]
     - $R -e "capabilities()" || true         # [not win]
     - $R -e "grSoftVersion()" || true        # [not win]
-    - $R -e "x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)"  # [not win]
+    - $R -e "x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)"           # [not win]
     - "\"%R%\" -e \"x <- tempfile(fileext = '.Rmd'); file.create(x); rmarkdown::render(x)\""  # [win]
+    - $R -e "testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')"           # [not win]
+    - "\"%R%\" -e \"testthat::test_dir('tests/testthat/', package='rmarkdown', load_package='installed')\""  # [win]
 
 about:
   home: https://pkgs.rstudio.com/rmarkdown/
