@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -50,7 +50,7 @@ requirements:
     - r-tinytex >=0.31
     - r-xfun >=0.36
     - r-yaml >=2.1.19
-    - pandoc >=1.14,<3.0
+    - pandoc >=1.14
 
 test:
   requires:
