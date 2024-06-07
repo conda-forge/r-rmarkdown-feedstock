@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -32,8 +32,7 @@ requirements:
     - r-htmltools >=0.5.1
     - r-jquerylib
     - r-jsonlite
-    - r-knitr >=1.22
-    - r-stringr >=1.2.0
+    - r-knitr >=1.43
     - r-tinytex >=0.31
     - r-xfun >=0.36
     - r-yaml >=2.1.19
@@ -45,8 +44,7 @@ requirements:
     - r-htmltools >=0.5.1
     - r-jquerylib
     - r-jsonlite
-    - r-knitr >=1.22
-    - r-stringr >=1.2.0
+    - r-knitr >=1.43
     - r-tinytex >=0.31
     - r-xfun >=0.36
     - r-yaml >=2.1.19
