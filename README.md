@@ -146,7 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@bsennblad](https://github.com/bsennblad/)
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@jdblischak](https://github.com/jdblischak/)
 * [@mdehollander](https://github.com/mdehollander/)
 * [@philip-khor](https://github.com/philip-khor/)
