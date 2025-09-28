@@ -1,4 +1,4 @@
-{% set version = "2.29" %}
+{% set version = "2.30" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rmarkdown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmarkdown/rmarkdown_{{ version }}.tar.gz
-  sha256: 6662ac85316c869caad6e3b95468cad97f6eef106d47b066db8d40c05a490928
+  sha256: 4d2ad3d230c1a9ded394dff76cbaf83a66bb8d96493b8d11cd56be78afa5a338
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
