@@ -1,15 +1,15 @@
-{% set version = "2.30" %}
+{% set version = "2.31" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-rmarkdown
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/rmarkdown_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rmarkdown/rmarkdown_{{ version }}.tar.gz
-  sha256: 4d2ad3d230c1a9ded394dff76cbaf83a66bb8d96493b8d11cd56be78afa5a338
+  sha256: 0c5baed4a447292f15507794d2dde6b18bae1fa6c45ea6ada8bcd99ca211fcbc
 
 build:
   number: 0
