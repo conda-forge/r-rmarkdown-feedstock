@@ -30,7 +30,7 @@ requirements:
     - r-htmltools >=0.5.1
     - r-jquerylib
     - r-jsonlite
-    - r-knitr >=1.43
+    - r-knitr >=1.50
     - r-tinytex >=0.31
     - r-xfun >=0.36
     - r-yaml >=2.1.19
@@ -42,7 +42,7 @@ requirements:
     - r-htmltools >=0.5.1
     - r-jquerylib
     - r-jsonlite
-    - r-knitr >=1.43
+    - r-knitr >=1.50
     - r-tinytex >=0.31
     - r-xfun >=0.36
     - r-yaml >=2.1.19
